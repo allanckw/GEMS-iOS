@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		989230351608A570009DF45B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989230341608A570009DF45B /* UIKit.framework */; };
+		989230371608A570009DF45B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989230361608A570009DF45B /* Foundation.framework */; };
+		989230391608A570009DF45B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 989230381608A570009DF45B /* CoreGraphics.framework */; };
+		9892303F1608A571009DF45B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9892303D1608A571009DF45B /* InfoPlist.strings */; };
+		989230411608A572009DF45B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230401608A572009DF45B /* main.m */; };
+		989230451608A572009DF45B /* GoogleBooksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230441608A572009DF45B /* GoogleBooksAppDelegate.m */; };
+		989230481608A572009DF45B /* GoogleBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230471608A572009DF45B /* GoogleBooksViewController.m */; };
+		9892304B1608A573009DF45B /* GoogleBooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989230491608A573009DF45B /* GoogleBooksViewController.xib */; };
+		9892306B1608A94C009DF45B /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230531608A94C009DF45B /* NSObject+SBJson.m */; };
+		9892306C1608A94C009DF45B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230561608A94C009DF45B /* SBJsonParser.m */; };
+		9892306D1608A94C009DF45B /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230581608A94C009DF45B /* SBJsonStreamParser.m */; };
+		9892306E1608A94C009DF45B /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9892305A1608A94C009DF45B /* SBJsonStreamParserAccumulator.m */; };
+		9892306F1608A94C009DF45B /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9892305C1608A94C009DF45B /* SBJsonStreamParserAdapter.m */; };
+		989230701608A94C009DF45B /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 9892305E1608A94C009DF45B /* SBJsonStreamParserState.m */; };
+		989230711608A94C009DF45B /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230601608A94C009DF45B /* SBJsonStreamWriter.m */; };
+		989230721608A94C009DF45B /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230621608A94C009DF45B /* SBJsonStreamWriterAccumulator.m */; };
+		989230731608A94C009DF45B /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230641608A94C009DF45B /* SBJsonStreamWriterState.m */; };
+		989230741608A94C009DF45B /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230661608A94C009DF45B /* SBJsonTokeniser.m */; };
+		989230751608A94C009DF45B /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230681608A94C009DF45B /* SBJsonUTF8Stream.m */; };
+		989230761608A94C009DF45B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9892306A1608A94C009DF45B /* SBJsonWriter.m */; };
+		989230791608AAC2009DF45B /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 989230781608AAC2009DF45B /* Book.m */; };
+		9892307C1608ACE8009DF45B /* GoogleBookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9892307B1608ACE8009DF45B /* GoogleBookService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		989230301608A570009DF45B /* JsonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		989230341608A570009DF45B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		989230361608A570009DF45B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		989230381608A570009DF45B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9892303C1608A571009DF45B /* JsonTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JsonTest-Info.plist"; sourceTree = "<group>"; };
+		9892303E1608A571009DF45B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		989230401608A572009DF45B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		989230421608A572009DF45B /* JsonTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JsonTest-Prefix.pch"; sourceTree = "<group>"; };
+		989230431608A572009DF45B /* GoogleBooksAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleBooksAppDelegate.h; sourceTree = "<group>"; };
+		989230441608A572009DF45B /* GoogleBooksAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleBooksAppDelegate.m; sourceTree = "<group>"; };
+		989230461608A572009DF45B /* GoogleBooksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleBooksViewController.h; sourceTree = "<group>"; };
+		989230471608A572009DF45B /* GoogleBooksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleBooksViewController.m; sourceTree = "<group>"; };
+		9892304A1608A573009DF45B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GoogleBooksViewController.xib; sourceTree = "<group>"; };
+		989230521608A94C009DF45B /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		989230531608A94C009DF45B /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		989230541608A94C009DF45B /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		989230551608A94C009DF45B /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		989230561608A94C009DF45B /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		989230571608A94C009DF45B /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		989230581608A94C009DF45B /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		989230591608A94C009DF45B /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		9892305A1608A94C009DF45B /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		9892305B1608A94C009DF45B /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		9892305C1608A94C009DF45B /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		9892305D1608A94C009DF45B /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		9892305E1608A94C009DF45B /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		9892305F1608A94C009DF45B /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		989230601608A94C009DF45B /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		989230611608A94C009DF45B /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		989230621608A94C009DF45B /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		989230631608A94C009DF45B /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		989230641608A94C009DF45B /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		989230651608A94C009DF45B /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		989230661608A94C009DF45B /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		989230671608A94C009DF45B /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		989230681608A94C009DF45B /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		989230691608A94C009DF45B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		9892306A1608A94C009DF45B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		989230771608AAC2009DF45B /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		989230781608AAC2009DF45B /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		9892307A1608ACE8009DF45B /* GoogleBookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleBookService.h; sourceTree = "<group>"; };
+		9892307B1608ACE8009DF45B /* GoogleBookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleBookService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9892302D1608A570009DF45B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989230351608A570009DF45B /* UIKit.framework in Frameworks */,
+				989230371608A570009DF45B /* Foundation.framework in Frameworks */,
+				989230391608A570009DF45B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		989230251608A570009DF45B = {
+			isa = PBXGroup;
+			children = (
+				989230511608A94C009DF45B /* Classes */,
+				9892303A1608A570009DF45B /* JsonTest */,
+				989230331608A570009DF45B /* Frameworks */,
+				989230311608A570009DF45B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		989230311608A570009DF45B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				989230301608A570009DF45B /* JsonTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989230331608A570009DF45B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				989230341608A570009DF45B /* UIKit.framework */,
+				989230361608A570009DF45B /* Foundation.framework */,
+				989230381608A570009DF45B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9892303A1608A570009DF45B /* JsonTest */ = {
+			isa = PBXGroup;
+			children = (
+				989230431608A572009DF45B /* GoogleBooksAppDelegate.h */,
+				989230441608A572009DF45B /* GoogleBooksAppDelegate.m */,
+				989230461608A572009DF45B /* GoogleBooksViewController.h */,
+				989230471608A572009DF45B /* GoogleBooksViewController.m */,
+				989230491608A573009DF45B /* GoogleBooksViewController.xib */,
+				989230771608AAC2009DF45B /* Book.h */,
+				989230781608AAC2009DF45B /* Book.m */,
+				9892307A1608ACE8009DF45B /* GoogleBookService.h */,
+				9892307B1608ACE8009DF45B /* GoogleBookService.m */,
+				9892303B1608A571009DF45B /* Supporting Files */,
+			);
+			path = JsonTest;
+			sourceTree = "<group>";
+		};
+		9892303B1608A571009DF45B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9892303C1608A571009DF45B /* JsonTest-Info.plist */,
+				9892303D1608A571009DF45B /* InfoPlist.strings */,
+				989230401608A572009DF45B /* main.m */,
+				989230421608A572009DF45B /* JsonTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		989230511608A94C009DF45B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				989230521608A94C009DF45B /* NSObject+SBJson.h */,
+				989230531608A94C009DF45B /* NSObject+SBJson.m */,
+				989230541608A94C009DF45B /* SBJson.h */,
+				989230551608A94C009DF45B /* SBJsonParser.h */,
+				989230561608A94C009DF45B /* SBJsonParser.m */,
+				989230571608A94C009DF45B /* SBJsonStreamParser.h */,
+				989230581608A94C009DF45B /* SBJsonStreamParser.m */,
+				989230591608A94C009DF45B /* SBJsonStreamParserAccumulator.h */,
+				9892305A1608A94C009DF45B /* SBJsonStreamParserAccumulator.m */,
+				9892305B1608A94C009DF45B /* SBJsonStreamParserAdapter.h */,
+				9892305C1608A94C009DF45B /* SBJsonStreamParserAdapter.m */,
+				9892305D1608A94C009DF45B /* SBJsonStreamParserState.h */,
+				9892305E1608A94C009DF45B /* SBJsonStreamParserState.m */,
+				9892305F1608A94C009DF45B /* SBJsonStreamWriter.h */,
+				989230601608A94C009DF45B /* SBJsonStreamWriter.m */,
+				989230611608A94C009DF45B /* SBJsonStreamWriterAccumulator.h */,
+				989230621608A94C009DF45B /* SBJsonStreamWriterAccumulator.m */,
+				989230631608A94C009DF45B /* SBJsonStreamWriterState.h */,
+				989230641608A94C009DF45B /* SBJsonStreamWriterState.m */,
+				989230651608A94C009DF45B /* SBJsonTokeniser.h */,
+				989230661608A94C009DF45B /* SBJsonTokeniser.m */,
+				989230671608A94C009DF45B /* SBJsonUTF8Stream.h */,
+				989230681608A94C009DF45B /* SBJsonUTF8Stream.m */,
+				989230691608A94C009DF45B /* SBJsonWriter.h */,
+				9892306A1608A94C009DF45B /* SBJsonWriter.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9892302F1608A570009DF45B /* JsonTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9892304E1608A573009DF45B /* Build configuration list for PBXNativeTarget "JsonTest" */;
+			buildPhases = (
+				9892302C1608A570009DF45B /* Sources */,
+				9892302D1608A570009DF45B /* Frameworks */,
+				9892302E1608A570009DF45B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JsonTest;
+			productName = JsonTest;
+			productReference = 989230301608A570009DF45B /* JsonTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		989230271608A570009DF45B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GoogleBooks;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Wee Kwan Tan";
+			};
+			buildConfigurationList = 9892302A1608A570009DF45B /* Build configuration list for PBXProject "JsonTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 989230251608A570009DF45B;
+			productRefGroup = 989230311608A570009DF45B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9892302F1608A570009DF45B /* JsonTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9892302E1608A570009DF45B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9892303F1608A571009DF45B /* InfoPlist.strings in Resources */,
+				9892304B1608A573009DF45B /* GoogleBooksViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9892302C1608A570009DF45B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989230411608A572009DF45B /* main.m in Sources */,
+				989230451608A572009DF45B /* GoogleBooksAppDelegate.m in Sources */,
+				989230481608A572009DF45B /* GoogleBooksViewController.m in Sources */,
+				9892306B1608A94C009DF45B /* NSObject+SBJson.m in Sources */,
+				9892306C1608A94C009DF45B /* SBJsonParser.m in Sources */,
+				9892306D1608A94C009DF45B /* SBJsonStreamParser.m in Sources */,
+				9892306E1608A94C009DF45B /* SBJsonStreamParserAccumulator.m in Sources */,
+				9892306F1608A94C009DF45B /* SBJsonStreamParserAdapter.m in Sources */,
+				989230701608A94C009DF45B /* SBJsonStreamParserState.m in Sources */,
+				989230711608A94C009DF45B /* SBJsonStreamWriter.m in Sources */,
+				989230721608A94C009DF45B /* SBJsonStreamWriterAccumulator.m in Sources */,
+				989230731608A94C009DF45B /* SBJsonStreamWriterState.m in Sources */,
+				989230741608A94C009DF45B /* SBJsonTokeniser.m in Sources */,
+				989230751608A94C009DF45B /* SBJsonUTF8Stream.m in Sources */,
+				989230761608A94C009DF45B /* SBJsonWriter.m in Sources */,
+				989230791608AAC2009DF45B /* Book.m in Sources */,
+				9892307C1608ACE8009DF45B /* GoogleBookService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9892303D1608A571009DF45B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9892303E1608A571009DF45B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		989230491608A573009DF45B /* GoogleBooksViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9892304A1608A573009DF45B /* en */,
+			);
+			name = GoogleBooksViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9892304C1608A573009DF45B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9892304D1608A573009DF45B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9892304F1608A573009DF45B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonTest/JsonTest-Prefix.pch";
+				INFOPLIST_FILE = "JsonTest/JsonTest-Info.plist";
+				OTHER_CFLAGS = "-fno-objc-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		989230501608A573009DF45B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JsonTest/JsonTest-Prefix.pch";
+				INFOPLIST_FILE = "JsonTest/JsonTest-Info.plist";
+				OTHER_CFLAGS = "-fno-objc-arc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9892302A1608A570009DF45B /* Build configuration list for PBXProject "JsonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9892304C1608A573009DF45B /* Debug */,
+				9892304D1608A573009DF45B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9892304E1608A573009DF45B /* Build configuration list for PBXNativeTarget "JsonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9892304F1608A573009DF45B /* Debug */,
+				989230501608A573009DF45B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 989230271608A570009DF45B /* Project object */;
+}
